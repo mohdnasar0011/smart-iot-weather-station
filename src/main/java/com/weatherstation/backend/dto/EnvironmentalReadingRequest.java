@@ -1,17 +1,18 @@
 package com.weatherstation.backend.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 
 import java.time.LocalDateTime;
-
+@Data
 public class EnvironmentalReadingRequest {
 
     @NotBlank(message = "Enter a valid deviceId")
     private String deviceId;
     @NotBlank(message = "Enter a valid timestamp")
     private LocalDateTime deviceTimestamp;
-
+    @NotBlank(message = "enter conductive rain sensor result" )
+    private Boolean waterPresence;
     @NotBlank(message = "Enter a valid temperature")
     private Double temperatureC;
     @NotBlank(message = "Enter a valid HumidityPercent")

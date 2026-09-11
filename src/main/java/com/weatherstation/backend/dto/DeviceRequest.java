@@ -1,6 +1,8 @@
 package com.weatherstation.backend.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
+
 
 public class DeviceRequest {
 
@@ -10,6 +12,7 @@ public class DeviceRequest {
     private String name;
     @NotBlank(message = "Enter a valid location")
     private String location;
+
 
     public DeviceRequest() {
     }

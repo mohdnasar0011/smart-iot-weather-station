@@ -7,7 +7,10 @@ import org.springframework.stereotype.Service;
 public class EnvironmentalReadingService {
     private final EnvironmentalReadingRepository environmentalReadingRepository;
 
+
     public EnvironmentalReadingService(EnvironmentalReadingRepository environmentalReadingRepository) {
         this.environmentalReadingRepository = environmentalReadingRepository;
+
+
     }
 }

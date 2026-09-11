@@ -1,12 +1,11 @@
 package com.weatherstation.backend.mapper;
 
 import com.weatherstation.backend.dto.EnvironmentalReadingRequest;
-import com.weatherstation.backend.entity.EnvironmentalReading;
 
 public class EnvironmentalReadingMapper {
 
-    public EnvironmentalReading toEntity(EnvironmentalReadingRequest request) {
-        EnvironmentalReading environmentalReading = new EnvironmentalReading();
+    public com.weatherstation.backend.entity.EnvironmentalReading toEntity(EnvironmentalReadingRequest request) {
+        com.weatherstation.backend.entity.EnvironmentalReading environmentalReading = new com.weatherstation.backend.entity.EnvironmentalReading();
 
         environmentalReading.setDeviceId(request.getDeviceId());
         environmentalReading.setDeviceTimestamp(request.getDeviceTimestamp());
